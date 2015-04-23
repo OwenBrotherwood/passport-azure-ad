@@ -18,4 +18,4 @@ Copyright (c) Microsoft Open Technologies, Inc.  All rights reserved. Licensed u
 # Owen
 Changed to https server.
 On Windows 8.1, "Manage Computer Certificates", export Personal Certificates localhost. Use defaults and a password like Passw0rd
-
+Change app.js realm identityProviderUrl identityMetadata to requirements

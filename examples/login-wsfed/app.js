@@ -26,6 +26,7 @@ var path = require('path');
 var passport = require('passport');
 var wsfedsaml2 = require('../../lib/passport-azure-ad/index').WsfedStrategy;
 var engine = require('ejs-locals');
+var fs = require('fs');
 
 var app = express();
 
@@ -125,7 +126,7 @@ var wsfedStrategy = new wsfedsaml2(config,
 passport.use(wsfedStrategy);
 
  var options = {
-  pfx: fs.readFileSync('./server.pfx'),
+  pfx: fs.readFileSync('./localhost.pfx'),
   passphrase: 'Passw0rd'
 };
 
